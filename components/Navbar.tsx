@@ -48,8 +48,7 @@ const Navbar = () => {
         <DropdownMenuTrigger>
           <Avatar>
             <AvatarImage
-              src="https://avatars.githubusercontent.com/u/134054107?s=400&
-u=1ebd89bf770078caf443004f005c43a2b12018de&v=4"
+              src="https://avatars.githubusercontent.com/u/134054107?s=400&u=1ebd89bf770078caf443004f005c43a2b12018de&v=4"
             ></AvatarImage>
             <AvatarFallback>User</AvatarFallback>
           </Avatar>

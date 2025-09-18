@@ -4,6 +4,7 @@ import "./globals.css";
 import SideBar from "@/components/SideBar";
 import Navbar from "@/components/Navbar";
 import { ThemeProvider } from "@/components/theme-provider";
+import { SidebarProvider } from "@/components/ui/sidebar";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -36,6 +37,7 @@ export default function RootLayout({
          enableSystem
          disableTransitionOnChange
         >
+          <SidebarProvider>
         <SideBar/>
         <main className="w-full">
           <Navbar/>
@@ -43,6 +45,7 @@ export default function RootLayout({
           {children}
           </div>
         </main>
+        </SidebarProvider>
         </ThemeProvider>
         
       </body>
