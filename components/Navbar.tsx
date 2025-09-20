@@ -13,14 +13,17 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { Button } from "./ui/button";
 import { useTheme } from "next-themes";
+import SideBar from "./SideBar";
+import { SidebarTrigger } from "./ui/sidebar";
 
 const Navbar = () => {
   const {theme,setTheme}=useTheme()
   return (
     <nav className="p-4 flex items-center justify-between">
       {/* left side-collapse button to collapse side bar */}
-      collapsible button
+     <SidebarTrigger/>
       {/*right side */}
+      <div className="flex items-center gap-5">
       <Link href="/">Dashboard</Link>
       {/*theme menu */}
       <DropdownMenu>
@@ -70,6 +73,7 @@ const Navbar = () => {
           </DropdownMenuItem>
         </DropdownMenuContent>
       </DropdownMenu>
+      </div>
     </nav>
   );
 };
