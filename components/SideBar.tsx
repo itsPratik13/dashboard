@@ -21,6 +21,7 @@ import {
   SidebarGroupLabel,
   SidebarHeader,
   SidebarMenu,
+  SidebarMenuBadge,
   SidebarMenuButton,
   SidebarMenuItem,
   SidebarSeparator,
@@ -99,6 +100,9 @@ const SideBar = () => {
                   <item.icon />
                   <span>{item.title}</span>
                 </SidebarMenuButton>
+                {item.title==="Inbox" && (
+                  <SidebarMenuBadge>15</SidebarMenuBadge>
+                )}
               </SidebarMenuItem>
             ))}
           </SidebarGroupContent>
